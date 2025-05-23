@@ -94,7 +94,7 @@ class Consulta:
             return
         
         print("\nConsultas cadastradas:")
-        print(tabulate(df, headers='keys', tablefmt='fancy_grid'))
+        print(tabulate(df, headers='keys', tablefmt='fancy_grid', showindex=False))
         
         try:
             id_editar = int(input("Digite o ID da consulta que deseja editar: "))
@@ -132,7 +132,7 @@ class Consulta:
             return
 
         print("\nConsultas cadastradas:")
-        print(tabulate(df, headers='keys', tablefmt='fancy_grid'))
+        print(tabulate(df, headers='keys', tablefmt='fancy_grid', showindex=False))
         
         try:
             id_excluir = int(input("Digite o ID da consulta que deseja excluir: "))
